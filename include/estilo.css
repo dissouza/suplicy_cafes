@@ -1,0 +1,32 @@
+footer{
+	max-width:1000px;
+}
+			
+a{
+	font-family: allerta;
+	font-size:14px;
+	text-decoration: none;
+	text-align:center;
+}
+				
+span{
+	font-size:12px;
+}
+		
+.coluna{
+	height:800px;
+}
+			
+li{
+	list-style:none;
+}
+			
+.img {
+	opacity: 0.5;
+	filter: alpha(opacity=50)
+}
+			
+.img:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}

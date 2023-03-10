@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Suplicy Cafés | Produtos</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, inicial-scale=1">
+		<link rel="stylesheet" href="include/w3.css" />
+		<link rel="stylesheet" href="include/estilo.css" />
+		<style>
+			body{
+				background-color:#E8E8E8;
+			}		
+			
+			#myBtn {
+				font-family: allerta;
+				display: none; 
+				position: fixed; 
+				bottom: 60px; 
+				right: 200px; 
+				z-index: 99; 
+				border: none; 
+				outline: none; 
+				background-color: black; 
+				color: white; 
+				cursor: pointer; 
+				padding: 20px; 
+				border-radius: 0px; 
+			}
+
+			#myBtn:hover {
+				background-color: #E90170; 
+			}		
+			</style>	
+	</head>
+	<body class="w3-content " style="max-width:1000px">
+	<div class="w3-white">
+	<header>
+		<div class="w3-row w3-hide-small" >
+			<div class="w3-col s12 m12 l12 w3-padding" style="background-color:black" align="center">
+				<a href="index.htm" alt="logo">
+				<img src="imagens/suplicy.png" width="105px"/>
+				</a>
+			</div>
+		</div>
+		
+		<div class="w3-row w3-bar w3-black w3-hide-large w3-hide-medium" >
+			<div class="w3-col s10 w3-padding" style="background-color:black">
+				<a href="index.htm" alt="logo">
+				<img src="imagens/suplicy.png" width="105px"/>
+				</a>
+			</div>
+			<div class="w3-dropdown-hover w3-col s2 w3-padding-4 w3-right" >			
+				<button class="w3-button img"><img src="imagens/icon_menu_mobile.png" width="28px"/></button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block w3-border" width="150px" style="right:0">			
+					<a href="index.htm" class="w3-bar-item w3-button">INÍCIO</a>
+					<a href="empresa.htm" class="w3-bar-item w3-button">EMPRESA</a>
+					<a href="produtos.htm" class="w3-bar-item w3-button">PRODUTOS</a>
+					<a href="lojas.htm" class="w3-bar-item w3-button">LOJAS</a>
+					<a href="servicos.htm" class="w3-bar-item w3-button">SERVIÇOS</a>
+					<a href="contato.htm" class="w3-bar-item w3-button">CONTATO</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="w3-row w3-bar w3-center w3-hide-small">
+				<a href="index.htm" >
+				<div class="w3-col w3-black m2 l2 w3-button  w3-display-container" >
+					<span class="w3-display-middle w3-text-white" alt="lojas" style="font-size:14px"><strong>INÍCIO</strong></span>
+				</div>
+				</a>
+				<a href="empresa.htm">
+				<div class="w3-col w3-black m2 l2 w3-button  w3-display-container">
+					<span class="w3-display-middle w3-text-white" alt="lojas" style="font-size:14px"><strong>EMPRESA</strong></span>
+				</div>
+				</a>
+				<a href="produtos.htm">
+				<div class="w3-col m2 l2 w3-button  w3-display-container" style="background-color:#E90170">
+					<span class="w3-display-middle w3-text-white" alt="lojas" style="font-size:14px"><strong>PRODUTOS</strong></span>
+				</div>
+				</a>
+				<a href="lojas.htm">
+				<div class="w3-col w3-black m2 l2 w3-button  w3-display-container">
+					<span class="w3-display-middle w3-text-white" alt="lojas" style="font-size:14px"><strong>LOJAS</strong></span>
+				</div>
+				</a>
+				<div class="w3-dropdown-hover w3-col m2 l2 w3-bar w3-black" >				
+				<button class="w3-button w3-text-white" style="font-family: allerta; font-size:14px; width:100%" ><strong>SERVIÇOS</strong></button>
+					<div class="w3-dropdown-content w3-bar-block w3-center w3-black" style="width:9%">
+						<a href="emcasa.htm" class="w3-bar-item w3-button">EM CASA</a>
+						<a href="notrabalho.htm" class="w3-bar-item w3-button">NO TRABALHO</a>
+						<a href="noseuevento.htm" class="w3-bar-item w3-button">NO SEU EVENTO</a>
+						<a href="noseunegocio.htm" class="w3-bar-item w3-button">NO SEU NEGÓCIO</a>
+						<a href="franquia.htm" class="w3-bar-item w3-button">FRANQUIA</a>
+					</div>
+				</div>
+				<a href="contato.htm">
+				<div class="w3-col w3-black m2 l2 w3-button  w3-display-container">
+					<span class="w3-display-middle w3-text-white" alt="lojas" style="font-size:14px"><strong>CONTATO</strong></span>
+				</div>
+				</a>
+		</div>
+		
+		<!-- MENU MOBILE ABAIXO
+		<div class="w3-dropdown-hover w3-card-2 w3-center w3-hide-medium w3-hide-large" style="width:100%" alt="dropdown_bar-mobile">
+			<button class="w3-button w3-block w3-center w3-text-white" style="background-color:#E90170; height:15%">
+				<strong>
+					=
+				</strong>
+			</button>
+				<div class="w3-dropdown-content w3-bar-block w3-center w3-black w3-display-container" style="width:100%; text-align:center">	
+				  <a href="index.htm" class="w3-bar-item w3-button" style="font-size:20px">INÍCIO</a>
+				  <a href="empresa.htm" class="w3-bar-item w3-button" style="font-size:20px">EMPRESA</a>
+				  <a href="produtos.htm" class="w3-bar-item w3-button" style="background-color:#E90170; font-size:20px">PRODUTOS</a>
+				  <a href="lojas.htm" class="w3-bar-item w3-button" style="font-size:20px">LOJAS</a>
+				  <a href="servicos.htm" class="w3-bar-item w3-button" style="font-size:20px">SERVIÇOS</a>
+				  <a href="contato.htm" class="w3-bar-item w3-button" style="font-size:20px">CONTATO</a>
+				</div>
+		</div>
+		MENU MOBILE FIM-->
+		
+	</header>
+	<!--</header>-->
+	
+	<!-- CONTEUDO (ABAIXO) -->
+	<div class="w3-row w3-white" alt="LINHA 1">	
+		<div class="w3-col w3-third w3-padding-large w3-center" style="margin-top:85px" alt="TORRA-CLARA">					
+			<img src="imagens/TORRA-CLARA.jpg" class="w3-image" height="262px" style="align:center"/>			
+			<br /><br />
+			<br /><br />
+			<div class="w3-padding-small w3-card-4" style="background:#E8E8E8; height:530px">
+			<h1 class="w3-center w3-padding" style="font-family:allerta; font-size:24px"><strong>TORRA CLARA</strong></h1>
+			
+			<p class="w3-padding-small" align="left">
+			<span style="font-family:arial; font-size:16px"><strong>Origem</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Fazenda Santa Alina, São Sebastião da Grama, SP </span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Região</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Vale da Grama</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Tipo</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">100% Coffea Arabica, variedade Bourbon Amarelo</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Certificação</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">BSCA</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Características</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Corpo suave, doçura marcante, com acidez cítrica.</span>
+
+
+
+			
+			<br />
+			</p>
+			</div>
+			<a href="http://loja.suplicycafes.com.br/index.php/suplicy-torra-clara.html" target="_blank">
+			<div class="w3-col w3-button w3-black w3-text-white w3-hover-pink w3-card-4" style="font-family:allerta; font-size:24px">
+			COMPRAR
+			</div>
+			</a>
+			
+		</div>		
+					
+		<div class="w3-col w3-third w3-padding-large w3-center" style="margin-top:85px" alt="TORRA-MEDIA">		
+			<img src="imagens/TORRA-MEDIA.jpg" class="w3-image w3-center" height="262px" />
+			<br /><br />
+			<br /><br />
+			<div class="w3-padding-small w3-card-4" style="background:#E8E8E8; height:530px">
+			<h1 class="w3-center w3-padding" style="font-family:allerta; font-size:24px"><strong>TORRA MEDIA</strong></h1>			
+			<p class="w3-padding-small" align="left">
+			<span style="font-family:arial; font-size:16px"><strong>Origem</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Blend das Fazendas Pinhal, Santo Antonio do Amparo, MG & Santa Alina, São Sebastião da Grama, São Paulo</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Região</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Sul de Minas e Vale da Grama</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Tipo</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">100% Coffea Arabica, variedade Bourbon Amarelo</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Certificação</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">BSCA</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Características</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Corpo suave, doçura marcante, com acidez cítrica.</span>
+
+
+
+			
+			<br />
+			</p>
+			</div>
+			<a href="http://loja.suplicycafes.com.br/index.php/suplicy-torra-media.html" target="_blank">
+			<div class="w3-col w3-button w3-black w3-text-white w3-hover-pink w3-card-4" style="font-family:allerta; font-size:24px">
+			COMPRAR
+			</div>
+			</a>
+			
+		</div>
+		
+		<div class="w3-col w3-third w3-padding-large w3-center" style="margin-top:85px" alt="TORRA-ESCURA">
+		
+			<img src="imagens/TORRA-ESCURA.jpg" class="w3-image w3-center" height="262px" />
+			<br /><br />
+			<br /><br />
+			<div class="w3-padding-small w3-card-4" style="background:#E8E8E8; height:530px">
+			<h1 class="w3-center w3-padding" style="font-family:allerta; font-size:24px"><strong>TORRA ESCURA</strong></h1>
+			<p class="w3-padding-small" align="left">
+			<span style="font-family:arial; font-size:16px"><strong>Origem</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Fazenda Santa Alina, São Sebastião da Grama, SP </span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Região</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Vale da Grama</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Tipo</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">100% Coffea Arabica, variedade Bourbon Amarelo</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Certificação</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">BSCA</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Características</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Corpo suave, doçura marcante, com acidez cítrica.</span>
+
+
+
+			
+			<br />
+			</p>
+			</div>
+			<a href="http://loja.suplicycafes.com.br/index.php/suplicy-torra-escura.html" target="_blank">
+			<div class="w3-col w3-button w3-black w3-text-white w3-hover-pink w3-card-4" style="font-family:allerta; font-size:24px">
+			COMPRAR
+			</div>
+			</a>
+		
+		</div>
+	</div>	
+	
+	<div class="w3-row w3-white" alt="LINHA 2">
+		<div class="w3-col w3-third w3-padding-large w3-center" style="margin-top:85px" alt="ORGANICO">		
+			<img src="imagens/ORGANICO.jpg"  class="w3-image" height="262px" />
+			<br /><br />
+			<br /><br />
+			<div class="w3-padding-small w3-card-4" style="background:#E8E8E8; height:530px">
+			<h1 class="w3-center w3-padding" style="font-family:allerta; font-size:24px"><strong>ORGÂNICO</strong></h1>
+			<p class="w3-padding-small" align="left">
+			<span style="font-family:arial; font-size:16px"><strong>Origem</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Fazenda Santa Alina, São Sebastião da Grama, SP </span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Região</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Vale da Grama</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Tipo</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">100% Coffea Arabica, variedade Bourbon Amarelo</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Certificação</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">BSCA</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Características</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Corpo suave, doçura marcante, com acidez cítrica.</span>
+
+
+
+			
+			<br />
+			</p>
+			</div>
+			<a href="http://loja.suplicycafes.com.br/index.php/suplicy-organico.html" target="_blank">
+			<div class="w3-col w3-button w3-black w3-text-white w3-hover-pink w3-card-4" style="font-family:allerta; font-size:24px">
+			COMPRAR
+			</div>
+			</a>			
+		</div>
+		
+		
+		<div class="w3-col w3-third w3-padding-large w3-center" style="margin-top:85px" alt="MICROLOTE">
+		
+			<img src="imagens/MICROLOTE.jpg" class="w3-image w3-center" height="262px" />
+			<br /><br />
+			<br /><br />
+			<div class="w3-padding-small w3-card-4" style="background:#E8E8E8; height:530px">
+			<h1 class="w3-center w3-padding" style="font-family:allerta; font-size:24px"><strong>MICROLOTE</strong></h1>
+			<p class="w3-padding-small" align="left">
+			<span style="font-family:arial; font-size:16px"><strong>Origem</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Fazenda Aterradinho, Ibiraci, Minas Gerais</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Região</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Alta Mogiana, MG</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Tipo</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Variedade Catuaí Amarelo</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Certificação</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">-</span>
+			<br /><br />
+			<span style="font-family:arial; font-size:16px"><strong>Características</strong></span>
+			<br />
+			<span class="" style="font-family:arial; font-size:12px">Café muito frutado, corpo aveludado, e leve acidez crítica com doçura marcante e notas de laranja carambola. Recomendado para TODOS os tipos de preparo.</span>
+
+
+
+			
+			<br />
+			</p>
+			</div>
+			<a href="http://loja.suplicycafes.com.br/index.php/microlote-fazenda-aterradinho.html" target="_blank">
+			<div class="w3-col w3-button w3-black w3-text-white w3-hover-pink w3-card-4" style="font-family:allerta; font-size:24px">
+			COMPRAR
+			</div>
+			</a>
+			
+		</div>
+		
+		<div class="w3-col w3-third w3-padding-large w3-center" style="margin-top:85px" alt="DESCAFEINADO">
+		
+			<img src="imagens/DESCAFEINADO.jpg" class="w3-image w3-center" height="262px" />
+			<br /><br />
+			<br /><br />
+			<div class="w3-padding-small w3-card-4" style="background:#E8E8E8; height:530px">
+			<h1 class="w3-center w3-padding" style="font-family:allerta; font-size:24px"><strong>DESCAFEINADO</strong></h1>
+			<p class="w3-padding-small" align="left">			
+			<span class="" style="font-family:arial; font-size:12px">São Grãos Especiais Brasileiros, 100% Arábica, Que São Cuidadosamente Selecionados.</span>
+			<br /><br />
+			
+			</div>
+			<a href="http://loja.suplicycafes.com.br/index.php/suplicy-descafeinado.html" target="_blank">
+			<div class="w3-col w3-button w3-black w3-text-white w3-hover-pink w3-card-4" style="font-family:allerta; font-size:24px">
+			COMPRAR
+			</div>
+			</a>
+			
+		</div>
+	</div>
+	
+	<br /><br />
+	<br /><br />
+	
+	
+	<footer class="w3-bottom"><!-- footer(rodapé da pagina) -->
+		<div class="w3-row w3-black w3-padding-large">
+			<div class="w3-half w3-black w3-left w3-hide-small" alt="logo_e_texto">
+				<a href="index.htm" alt="logo">
+					<img src="imagens/suplicy_cafes.png" class="w3-left w3-image" width="28px"/>
+				</a>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;© Suplicy Cafés 2017</span>
+			</div>
+			
+			<div class="w3-half w3-black w3-right" align="right" alt="logo_e_texto">
+				<a href="http://pinterest.com/suplicycafes" target="_blank">
+				<img src="imagens/pinterest.png" class="img" width="24px"/>
+				</a>
+				&nbsp;
+				<a href="https://twitter.com/suplicycafes" target="_blank">
+				<img src="imagens/twitter.png" class="img" width="24px"/>
+				</a>
+				&nbsp;
+				<a href="http://www.youtube.com/user/suplicycafes" target="_blank">
+				<img src="imagens/youtube.png" class="img" width="24px" />
+				</a>
+				&nbsp;
+				<a href="https://www.facebook.com/suplicycafes" target="_blank">
+				<img src="imagens/facebook.png" class="img" width="24px" />
+				</a>
+				&nbsp;
+				<a href="http://instagram.com/suplicy_cafes" target="_blank">
+				<img src="imagens/instagram.png" class="img" width="24px" />
+				</a>				
+			</div>			
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
