@@ -9,8 +9,7 @@ function carregaEstadoCidade()	{
                     //no text estou usando a propriedade Categoria dos objetos dentro do array categoria (case sensitive também)
                     text: categoria.Estado
                 }))
-            })
-			
+            })			
 			
             //Vai ser acionado cada vez que o UF do item selecionado
             $("#uf").change(function () {
